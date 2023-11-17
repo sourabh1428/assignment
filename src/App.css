@@ -1,0 +1,17 @@
+*{
+  margin: 0px;
+  padding:0px;
+}
+.app{
+  height: 100vh;
+  width: 100vw;
+  background-color: #03123D;
+  display: flex;
+  flex-direction: row;
+  
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}

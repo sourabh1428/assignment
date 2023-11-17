@@ -1,0 +1,41 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.cardFoot{
+    display: flex;
+    padding: 12px 12px 12px 16px;
+    border-radius: 8px;
+background: rgba(249, 250, 253, 0.20);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardFoot button{
+    border-radius: 6px;
+    background: rgba(249, 250, 253, 0.20);
+    border: none;
+}
+.cardFoot p{
+    color: var(--White-1, var(--White, #FFF));
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Heading/Med */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.5px;
+}
+.card >img
+{
+    border-radius: 20px;
+}

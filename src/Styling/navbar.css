@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Aclonica&family=DM+Sans:opsz@9..40&family=Gothic+A1&family=Inter&family=Montserrat&family=Plus+Jakarta+Sans&family=Poppins&family=Preahvihear&family=Roboto&family=Rubik&display=swap');
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 20%;
+    gap: 70px;
+    background: #03123D;
+}
+.allNavContent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navHeading{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    color: var(--White-1, var(--White, #FFF));
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Heading/Med */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.5px;
+    justify-content: space-between;
+}
+
+.navHeading div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.navHeading:hover{
+    background:rgb(217, 0, 255) ;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+
+.sideBar{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 100%;
+}
+.movieh1{
+        color: var(--White-1, var(--White, #FFF));
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.1px;
+}
+.sideBar label{
+        color: var(--White-1, var(--White, #FFF));
+
+    /* Body sm/14px_roboto */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+.sideBar p{
+    height: 20%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.close1{
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 8px;
+    background: #CB1A80;
+    color: #FAFAFB;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+}
+
+  
+  .open {
+    display: flex; 
+    flex-direction: column; 
+  }
+.hamburger{
+    display: flex;
+    flex-direction:column;
+    z-index: 100;
+}
+
+
+
+  /* .hamburger{
+    display: none !important;
+} */
+
+   
+.hamburger{
+    display: none !important;
+}
+/* Your existing styles... */
+@media only screen and (max-width: 600px) {
+    .nav-bar{
+        display: none !important;
+       }
+       .hamburger{
+        display: block !important;
+       }
+  }
