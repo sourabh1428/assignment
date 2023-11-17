@@ -48,8 +48,8 @@ const Planet = () => {
             <input type="text" placeholder='Search' />
         </div>
         <div className='div2'>
-            <h1>Films</h1>
-            <button className='gorl' onClick={()=>setGol(!gol)}>Grid</button>
+            <h1>Planet</h1>
+            <button className='gorl' onClick={()=>setGol(!gol)}>{(gol)?'Grid':'list'}</button>
         </div>
             <div className='div3'>
                 {(!gol)?movieD.map((e,i) => (

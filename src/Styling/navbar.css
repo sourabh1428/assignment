@@ -112,7 +112,14 @@ letter-spacing: 0.5px;
   /* .hamburger{
     display: none !important;
 } */
+.navHeading{
+    background-color: none !important;
+}
 
+.activeNavHeading {
+    background-color: red !important; /* Set the text color for the active link */
+  }
+  
    
 .hamburger{
     display: none !important;

@@ -43,6 +43,7 @@ function Movies() {
         return <div><Loading/></div>;
     }
 
+
     return (
         <div className='moviesDiv'>
             <Hamburger/>
@@ -52,7 +53,7 @@ function Movies() {
         </div>
         <div className='div2'>
             <h1>Films</h1>
-            <button className='gorl' onClick={()=>setGol(!gol)}>Grid</button>
+            <button className='gorl' onClick={()=>setGol(!gol)}>{(gol)?'Grid':'list'}</button>
         </div>
             <div className='div3'>
                 {(!gol)?movieD.map((e,i) => (

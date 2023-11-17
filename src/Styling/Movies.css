@@ -46,6 +46,16 @@ font-feature-settings: 'clig' off, 'liga' off;
     font-weight: 600;
     line-height: 28px; /* 140% */
 }
+
+.div2 button{padding: 20px;}
+.div2 button:hover{
+    background: #CB1A80;
+    
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
 .div3{
 
     padding: 50px;
