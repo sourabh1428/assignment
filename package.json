@@ -1,12 +1,11 @@
 {
-  "homepage": "https://sourabh1428.github.io/starWarDashboard",
+  
   "name": "star-war",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeployed": "npm run build",
-    "deploy": "gh-pages -d dist",
+   
 
     "dev": "vite",
     "build": "vite build",
