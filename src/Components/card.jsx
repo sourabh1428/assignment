@@ -8,7 +8,7 @@ import Alldetail from './details'
 
 
 
-const Card = ({movieName,id,details,sIcon}) => {
+const Card = ({movieName,id,details,sIcon,setDataSide,setTapped}) => {
 
     const [image, setImage] = useState(null);
 
@@ -28,24 +28,25 @@ const Card = ({movieName,id,details,sIcon}) => {
             });
     }, [id]);
 
-    const global=useContext(Alldetail);
 
 
     function handleClick(){
         console.log(details);
-        console.log(global);
+        setDataSide({'title':details.title,'crawl':details.opening_crawl,'genre':details.producer});
+        setTapped(true);
+       
     }
         
      
 
     return (
-        <Alldetail.Provider value={details}>
+        
         <div className='card' onClick={handleClick}>
             <img src={image} height={200} width={300} alt="" />
             <div className='cardFoot'><img src={sIcon} alt="" /><p>{movieName}</p><button><img src={btn} alt="" /></button></div>
 
         </div>
-        </Alldetail.Provider>
+     
     );
 }
 

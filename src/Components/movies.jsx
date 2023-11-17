@@ -6,7 +6,7 @@ import ListData from './ListData';
 import Loading from './Loading';
 import Hamburger from './Hamburger';
 
-function Movies() {
+function Movies({setDataSide,setTapped}) {
 
 
     let[gol,setGol]=useState(false);
@@ -57,7 +57,7 @@ function Movies() {
         </div>
             <div className='div3'>
                 {(!gol)?movieD.map((e,i) => (
-                    <Card sIcon={mov}  key={i} movieName={e.title} id={i} details={e} />
+                    <Card sIcon={mov} setDataSide={setDataSide} setTapped={setTapped} key={i} movieName={e.title} id={i} details={e} />
                 )):<ListData movies={movieD}/>}
             </div>
 

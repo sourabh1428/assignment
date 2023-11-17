@@ -19,17 +19,18 @@ import Hamburger from './Components/Hamburger'
 function App() {
 
   let[isTapped,setTapped]=useState(false);
+  let[dataSide,setDataSide]=useState({'title':null,'crawl':null,'genre':null});
   let stateSideBar=useContext(Alldetail);
 
 
   return (
     <div className='app'>
-    {(isTapped)?<Sidebar detail={stateSideBar} setTapped={setTapped} />:<NavBar/>}
+    {(isTapped)?<Sidebar dataSide={dataSide} setTapped={setTapped} />:<NavBar/>}
   
     <Routes>
     
         <Route path='/' element={<Body/>} />
-        <Route path='movies' element={<Movies/>}/>
+        <Route path='movies' element={<Movies setDataSide={setDataSide} setTapped={setTapped}/>}/>
         <Route path='people' element={<People/>}></Route>
         <Route path='planets' element={<Planet/>}></Route>
         <Route path='species' element={<Species/>}></Route>

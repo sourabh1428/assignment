@@ -2,7 +2,9 @@ import React from 'react';
 import '../Styling/navbar.css'
 
 
-const Sidebar = ({detail,setTapped}) => {
+const Sidebar = ({dataSide,setTapped}) => {
+
+    const pcss={"color":"var(--Text-Black, #252C32)","fontFeatureSettings":"'clig' off, 'liga' off","fontFamily":"Poppins","fontSize":"12px","fontStyle":"normal","fontWeight":"400","lineHeight":"20px","letterSpacing":"0.1px"};
 
     const buttonStyle = {
         
@@ -27,11 +29,11 @@ const Sidebar = ({detail,setTapped}) => {
         <div className='sideBar'>
             <img src="" alt="" />
             <label htmlFor="">Title</label>
-            <p>{detail.title}</p>
+            <div style={{background:'white',padding:'10px',borderRadius:'10px'}}><p style={pcss}>{dataSide.title}</p></div>
             <label htmlFor="">Opening  Crawl</label>
-            <p>{detail.crawl}</p> 
+            <div style={{background:'white',padding:'10px',borderRadius:'10px'}}><p style={pcss}>{dataSide.crawl}</p></div> 
             <label htmlFor="">Genre</label>
-            <p>{detail.genre}</p>
+            <div style={{background:'white',padding:'10px',borderRadius:'10px'}}><p style={pcss}>{dataSide.genre}</p></div>
         </div>
         <button className='close1'
       style={buttonStyle}
