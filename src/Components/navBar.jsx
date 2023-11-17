@@ -17,12 +17,12 @@ const NavBar = () => {
             <img src={logo} height={36} width={72} alt="" />
             <div className="allNavContent">
        
-                <NavLink to='movies'><div   className='navHeading' activeClassName='activeNavHeading'><div><img src={folderImg} alt="" />Film </div> <img src={rightArrow} alt="" /></div></NavLink>
-                <NavLink to='people'><div   className='navHeading' activeClassName='activeNavHeading'><div><img src={folderImg} alt="" />People </div> <img src={rightArrow} alt="" /></div></NavLink>
-                <NavLink to='planets'><div   className='navHeading' activeClassName='activeNavHeading'><div><img src={folderImg} alt="" />Planet</div> <img src={rightArrow} alt="" /></div></NavLink>
-                <NavLink to='species'><div   className='navHeading' activeClassName='activeNavHeading'><div><img src={folderImg} alt="" />Species </div> <img src={rightArrow} alt="" /></div></NavLink>
-                <NavLink to='starships'><div   className='navHeading' activeClassName='activeNavHeading'><div><img src={folderImg} alt="" />Starships </div> <img src={rightArrow} alt="" /></div></NavLink>
-                <NavLink to='vehicles'><div   className='navHeading' activeClassName='activeNavHeading'><div><img src={folderImg} alt="" />Vehicles</div> <img src={rightArrow} alt="" /></div></NavLink>
+                <NavLink to='movies'><div   className='navHeading' activeclassname='activeNavHeading'><div><img src={folderImg} alt="" />Film </div> <img src={rightArrow} alt="" /></div></NavLink>
+                <NavLink to='people'><div   className='navHeading' activeclassname='activeNavHeading'><div><img src={folderImg} alt="" />People </div> <img src={rightArrow} alt="" /></div></NavLink>
+                <NavLink to='planets'><div   className='navHeading' activeclassname='activeNavHeading'><div><img src={folderImg} alt="" />Planet</div> <img src={rightArrow} alt="" /></div></NavLink>
+                <NavLink to='species'><div   className='navHeading' activeclassname='activeNavHeading'><div><img src={folderImg} alt="" />Species </div> <img src={rightArrow} alt="" /></div></NavLink>
+                <NavLink to='starships'><div   className='navHeading' activeclassname='activeNavHeading'><div><img src={folderImg} alt="" />Starships </div> <img src={rightArrow} alt="" /></div></NavLink>
+                <NavLink to='vehicles'><div   className='navHeading' activeclassname='activeNavHeading'><div><img src={folderImg} alt="" />Vehicles</div> <img src={rightArrow} alt="" /></div></NavLink>
           
 
 
