@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../Styling/Movies.css'
 import Card from './card';
-import ListData from './ListData';
+import ListData2 from './ListData2';
 import PlanetIcon from '../assets/Vector.svg';
 import Loading from './Loading';
 import Hamburger from './Hamburger';
@@ -13,6 +13,7 @@ const Planet = () => {
     const [movieD, setMovieD] = useState([]);
     const [loading, setLoading] = useState(true);
     let mounted;
+  
     
     async function getMovieData() {
         try {
@@ -55,7 +56,7 @@ const Planet = () => {
             <div className='div3'>
                 {(!gol)?movieD.map((e,i) => (
                     <Card key={i} movieName={e.name} id={i} details={e} sIcon={PlanetIcon}/>
-                )):<ListData movies={movieD}/>}
+                )):<ListData2 movies={movieD} param1={'name'} param2={'climate'} param3={'population'}/>}
             </div>
 
            

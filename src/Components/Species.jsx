@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../Styling/Movies.css'
 import Card from './card';
-import ListData from './ListData';
+import ListData2 from './ListData2';
 import alienIcon from '../assets/Alien.svg'
 import Loading from './Loading';
 import Hamburger from './Hamburger';
@@ -13,7 +13,7 @@ const Species = () => {
     const [movieD, setMovieD] = useState([]);
     const [loading, setLoading] = useState(true);
     let mounted;
-    
+   
     async function getMovieData() {
         try {
             const res = await fetch('https://swapi.dev/api/species');
@@ -55,7 +55,7 @@ const Species = () => {
             <div className='div3'>
                 {(!gol)?movieD.map((e,i) => (
                     <Card sIcon={alienIcon}  key={i} movieName={e.name} id={i} details={e} />
-                )):<ListData movies={movieD}/>}
+                )):<ListData2 movies={movieD} param1={'name'} param2={'classification'} param3={'designation'}/>}
             </div>
 
            
