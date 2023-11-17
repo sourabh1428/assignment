@@ -1,42 +1,45 @@
-.movieTable{
-    width: 100%;  
+.movieTable {
+  width: 100%;
 }
-th{
-    border-radius: 6px 0px 0px 6px;
-background: #4D5875;
-color: var(--White-1, var(--White, #FFF));
-text-align: center;
-font-feature-settings: 'clig' off, 'liga' off;
+th {
+  border-radius: 6px 0px 0px 6px;
+  background: #4d5875;
+  color: var(--White-1, var(--White, #fff));
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
 
-/* Heading/Med */
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 142.857% */
-letter-spacing: 0.5px;
+  /* Heading/Med */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.5px;
 
-height: 40px;
-padding: 0px 16px;
-align-items: center;
-gap: 10px;
-align-self: stretch;
+  height: 40px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
 }
-tr{
-height: 54px;
-padding: 0px 16px;
-align-self: center;
-gap: 10px;
+tr {
+  height: 54px;
+  padding: 0px 16px;
+  align-self: center;
+  gap: 10px;
 
-color: var(--White-1, var(--White, #FFF));
-font-feature-settings: 'clig' off, 'liga' off;
+  color: var(--White-1, var(--White, #fff));
+  font-feature-settings: "clig" off, "liga" off;
 
-/* Heading/Med */
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 142.857% */
-letter-spacing: 0.5px;
-border-bottom: 1px solid var(--Grey-Stroke, #DEDEDE);
+  /* Heading/Med */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.5px;
+  
+}
+td{
+    border-bottom: 1px solid var(--Grey-Stroke, #DEDEDE);
 }

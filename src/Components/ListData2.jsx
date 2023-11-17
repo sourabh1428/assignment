@@ -6,9 +6,9 @@ const ListData2 = ({ movies ,param1,param2,param3}) => {
   // Columns configurationnpm
   const columns = React.useMemo(
     () => [
-      { Header: param1, accessor: param3 },
+      { Header: param1, accessor: param1 },
       { Header: param2, accessor: param2 },
-      { Header: param3, accessor: param1 },
+      { Header: param3, accessor: param3 },
     ],
     []
   );
