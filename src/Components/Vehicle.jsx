@@ -4,6 +4,7 @@ import Card from './card';
 import ListData from './ListData';
 import alienIcon from '../assets/CarProfile.svg'
 import Loading from './Loading';
+import Hamburger from './Hamburger';
 
 
 const Vehicle = () => {
@@ -43,7 +44,7 @@ const Vehicle = () => {
 
     return (
         <div className='moviesDiv'>
-            
+            <Hamburger/>
             <div className='div1'>
             <input type="text" placeholder='Search' />
         </div>

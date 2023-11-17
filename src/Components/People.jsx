@@ -4,6 +4,7 @@ import Card from './card';
 import ListData from './ListData';
 import alienIcon from '../assets/Users.svg'
 import Loading from './Loading';
+import Hamburger from './Hamburger';
 
 const People = () => {
     let[gol,setGol]=useState(false);
@@ -42,7 +43,7 @@ const People = () => {
 
     return (
         <div className='moviesDiv'>
-            
+            <Hamburger/>
             <div className='div1'>
             <input type="text" placeholder='Search' />
         </div>
